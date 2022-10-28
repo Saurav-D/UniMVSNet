@@ -4,7 +4,7 @@ import torch.distributed as dist
 from torch.utils.data import RandomSampler, SequentialSampler
 
 from .dtu_yao import MVSDataset as DtuDataset
-from general_eval import MVSDataset as EvalDataset
+from datasets.general_eval import MVSDataset as EvalDataset
 from .blendedmvs import BlendedMVSDataset
 
 
