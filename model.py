@@ -2,7 +2,6 @@ import cv2
 import time
 import progressbar
 import torch.backends.cudnn as cudnn
-from tensorboardX import SummaryWriter
 from torch.nn.parallel import DistributedDataParallel
 
 from networks.mvsnet import MVSNet
