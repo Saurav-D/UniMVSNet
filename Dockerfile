@@ -21,6 +21,8 @@ RUN apt-get update \
 WORKDIR mvs
 
 COPY . ./
+RUN pip3 install wheel
+RUN pip3 install setuptools
 
 RUN pip3 install -r requirements.txt
 #
