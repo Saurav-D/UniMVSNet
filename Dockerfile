@@ -21,6 +21,7 @@ RUN apt-get update \
 WORKDIR mvs
 
 COPY . ./
+RUN pip install plyfile
 RUN pip3 install wheel
 RUN pip3 install setuptools
 
