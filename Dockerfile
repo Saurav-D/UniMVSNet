@@ -22,9 +22,9 @@ WORKDIR mvs
 
 COPY . ./
 RUN pip install plyfile
+RUN pip install yacs
 RUN pip3 install wheel
 RUN pip3 install setuptools
-
 RUN pip3 install -r requirements.txt
 #
 RUN mkdir /mvs/fusibile/build
