@@ -24,6 +24,6 @@ def get_loader(args, datapath, listfile, nviews, mode="train"):
     else:
         sampler = RandomSampler(dataset) if (mode == "train") else SequentialSampler(dataset)
 
-    data_loader = data.DataLoader(dataset, args.batch_size, sampler=sampler, num_workers=4, drop_last=(mode == "train"), pin_memory=True)
+    data_loader = data.DataLoader(dataset, args.batch_size, sampler=sampler, num_workers=0, drop_last=(mode == "train"), pin_memory=True)
 
     return data_loader, sampler
